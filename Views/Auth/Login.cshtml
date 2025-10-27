@@ -1,7 +1,4 @@
 ﻿@page
-@{
-    Layout = null;
-}
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +9,7 @@
 </head>
 <body style="overflow: hidden">
 <div class="container d-flex justify-content-center align-items-center vh-100">
-    <form class="border border-1 rounded-2 border-black p-5 w-">
+    <form class="border border-1 rounded-2 border-black p-5">
         <label class="form-label" for="email">Email</label>
         <input class="form-control mb-4" id="email" type="email" required/>
         <label class="form-label" for="password">Password</label>
@@ -33,7 +30,7 @@
             Sign in With Google
         </button>
         <hr/>
-        <a class="nav-link text-center mt-2 mb-0">Create New Account Here!</a>
+        <a class="nav-link text-center mt-2 mb-0 text-primary" asp-action="Register" asp-controller="Auth">Create New Account Here!</a>
     </form>
 </div>
 </body>

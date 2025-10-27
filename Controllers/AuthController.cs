@@ -8,4 +8,8 @@ public class AuthController : Controller
     {
         return View();
     }
+    public IActionResult Register()
+    {
+        return View();
+    }
 }
