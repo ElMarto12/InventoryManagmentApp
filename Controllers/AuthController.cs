@@ -1,0 +1,11 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace InventoryManagmentApp.Controllers;
+
+public class AuthController : Controller
+{
+    public IActionResult Login()
+    {
+        return View();
+    }
+}
